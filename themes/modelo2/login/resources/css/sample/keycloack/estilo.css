@@ -1,0 +1,133 @@
+/* Fundo da tela */
+body {
+    background: #417ec0;
+    padding: 0 0;
+}
+
+/* Imagem do form de login e esqueceu senha */
+.logo {
+    background-image: url(../img/logo-lyceum-azul.png);
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 80px;
+    transform: translateX(50%);
+}
+
+/* Mantenha-me conectado e esqueceu sua senha? e link voltar */
+.login-pf-settings {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+/* Botão submit da tela login, esqueci minha senha e novo cadastro de usuário */
+.btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    background: #417ec0;
+    border: 1px solid #417ec0;
+}
+
+/* Links novo usuário (cadastre-se) e texto informativo na tela de esqueceu senha */
+.login-form .login-pf-signup {
+  font-size: 13px;
+  color: #72767b;
+}
+
+/* Propriedades do form de login, esqueceu sua senha e novo usuário */
+.login-form {
+    max-width: 380px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 4px;
+    color: #505e6c;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.login-form .illustration {
+    text-align: center;
+    padding: 0 0 20px;
+    font-size: 100px;
+    color: rgb(244,71,107);
+}
+
+.login-form form .form-control {
+    border: none;
+    border-bottom:1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 8px;
+    height: 42px;
+}
+
+.login-form form .btn-primary {
+    background: #417ec0;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 26px;
+    text-shadow: none;
+    outline: none !important;
+}
+
+.login-form form .btn-primary:hover, .login-form form .btn-primary:active {
+    opacity: 0.8;
+}
+
+.login-form form .btn-primary:active {
+    transform: translateY(1px);
+}
+
+.login-form form .forgot {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.login-form form .forgot:hover, .login-form form .forgot:active {
+    opacity: 1;
+    text-decoration: none;
+}
+
+/* Mensagem de erro */
+.alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* Ícones do lado dos campos usuario e senha */
+.icon-input .form-control {
+    padding-left: 2.375rem;
+}
+
+.icon-input .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+/* Erro da tela de novo usuário */
+.has-error .form-control {
+    border-color: #c00 !important;
+}
+
+.login,
+.image {
+    min-height: 100vh;
+}
