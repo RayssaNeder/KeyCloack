@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  keycloak:
+    privileged: true
+    image: jboss/keycloak
+    ports:
+      - 8085:8080
+    volumes:
+      - ./standalone/configuration/standalone.xml:/opt/jboss/keycloak/standalone/configuration/standalone.xml
+      - ./standalone/data:/opt/jboss/keycloak/standalone/data
+      - ./themes:/opt/jboss/keycloak/themes/
+    environment:
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=admin
+
+      - DB_VENDOR=h2
